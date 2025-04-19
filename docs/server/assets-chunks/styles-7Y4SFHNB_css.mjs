@@ -1,0 +1,2 @@
+export default `*{margin:0;padding:0;box-sizing:border-box}html,body{height:100%;font-family:Inter,sans-serif;background-color:#f9fafb;color:#1f2937;line-height:1.6}.container{max-width:1200px;margin:0 auto;padding:2rem}h1,h2,h3,h4{color:#111827;font-weight:600;margin-bottom:1rem}button{font-family:inherit;padding:.75rem 1.5rem;border:none;background-color:#2563eb;color:#fff;border-radius:6px;cursor:pointer;transition:background-color .2s ease}button:hover{background-color:#1e40af}a{text-decoration:none}a:hover{text-decoration:underline}
+`;
