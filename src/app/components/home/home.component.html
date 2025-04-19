@@ -1,0 +1,57 @@
+
+
+<div class="main-container">
+    <section id="home" class="hero-section">
+        <div class="overlay"></div>
+        <app-navbar></app-navbar>
+        <div class="hero-text">
+            <h1>Mobile Fingerprinting, Redefined.</h1>
+            <p>FDLE Level 2 • FBI • ATF • Live Scan • Ink • Mobile Notary</p>
+            <a href="#contact" class="cta-button">Schedule Appointment</a>
+        </div>
+    </section>
+      
+      
+
+  <section id="services" class="services-section">
+    <h2>All Mobile Services</h2>
+    <div class="service-grid">
+        <div class="service-card" *ngFor="let service of services">
+            <img [src]="service.image" [alt]="service.title" class="service-image" />
+            <h3>{{ service.title }}</h3>
+            <p>{{ service.description }}</p>
+        </div>          
+    </div>
+  </section>
+
+  <section id="requirements" class="requirements-section">
+    <h2>Appointment Requirements</h2>
+    <ul>
+      <li>Full Name (First & Last)</li>
+      <li>Phone Number</li>
+      <li>Email Address</li>
+      <li>County/Location</li>
+      <li>Valid State ID</li>
+      <li>ORI Number (if applicable)</li>
+      <li>Requested Time, Date, and Location</li>
+    </ul>
+    <p class="note">It is the applicant’s responsibility to verify the correct ORI number with their agency.</p>
+  </section>
+
+  <section id="pricing" class="pricing-section">
+    <h2>Pricing & Payment</h2>
+    <p>Please contact us for pricing details.</p>
+    <p>Payments accepted via Zelle:</p>
+    <p><strong>onpointmobilefingerprints&#64;gmail.com</strong></p>
+    <p>There are no service fees when using Zelle.</p>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Phone: <a href="tel:9546823722">954.682.3722</a></p>
+    <p>Email: <a href="mailto:onpointmobilefingerprints@gmail.com">onpointmobilefingerprints&#64;gmail.com</a></p>
+    <p>Instagram | Facebook | TikTok</p>
+  </section>
+</div>
+
+<app-footer></app-footer>

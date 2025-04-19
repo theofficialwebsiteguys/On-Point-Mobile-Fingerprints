@@ -1,0 +1,23 @@
+<nav class="navbar" [class.scrolled]="scrolled" role="navigation">
+  <div class="logo">
+    <a href="#home">
+      <img src="assets/opmf-logo-full-nobg.png" alt="Mobile Fingerprinting Logo" />
+    </a>
+  </div>
+
+  <button class="menu-toggle" (click)="menuOpen  = !menuOpen " aria-label="Toggle menu">
+    <i class="fa-solid" [ngClass]="menuOpen  ? 'fa-xmark' : 'fa-bars'"></i>
+  </button>
+
+  <ul class="nav-links" [class.open]="menuOpen ">
+    <li><a href="#home" (click)="menuOpen  = false">Home</a></li>
+    <li><a href="#services" (click)="menuOpen  = false">Services</a></li>
+    <li><a href="#requirements" (click)="menuOpen  = false">Requirements</a></li>
+    <li><a href="#pricing" (click)="menuOpen  = false">Pricing</a></li>
+    <li><a href="#contact" (click)="menuOpen  = false">Contact</a></li>
+  </ul>
+
+  <div class="contact-cta">
+    <a href="tel:9546823722" class="cta-button">Contact Now</a>
+  </div>
+</nav>
