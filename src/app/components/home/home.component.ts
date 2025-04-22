@@ -3,10 +3,12 @@ import { NavbarComponent } from '../navbar/navbar.component';
 import { FooterComponent } from '../footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { MarqueeComponent } from '../marquee/marquee.component';
+import { ContactComponent } from '../contact/contact.component';
+import { PricingComponent } from '../pricing/pricing.component';
 
 @Component({
   selector: 'app-home',
-  imports: [NavbarComponent, FooterComponent, CommonModule, MarqueeComponent],
+  imports: [NavbarComponent, FooterComponent, CommonModule, MarqueeComponent, ContactComponent, PricingComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

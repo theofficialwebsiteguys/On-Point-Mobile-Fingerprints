@@ -1,1 +1,90 @@
-<p>contact works!</p>
+<section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+  
+    <div class="contact-details">
+      <div class="contact-card">
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:9546823722">954.682.3722</a>
+      </div>
+  
+      <div class="contact-card">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:onpointmobilefingerprints@gmail.com">onpointmobilefingerprints&#64;gmail.com</a>
+      </div>
+  
+      <div class="contact-card">
+        <a href="https://www.instagram.com/onpointmobilefingerprints" target="_blank">Instagram</a> |
+        <a href="https://www.facebook.com/people/On-Point-Mobile-Fingerprints/61575003513860" target="_blank">Facebook</a> |
+        <a href="https://www.tiktok.com/@on.point.mobile.f" target="_blank">TikTok</a>
+      </div>
+      
+    </div>
+  
+    <div class="hours-locations">
+      <div class="hours">
+        <h3><i class="fa-regular fa-clock"></i> Hours of Operation</h3>
+        <ul>
+          <li>Monday to Friday — <strong>9am to 6pm</strong></li>
+          <li>Saturdays — <strong>Contact for Appointment</strong></li>
+          <li>Sundays — <strong>Closed</strong></li>
+        </ul>
+      </div>
+  
+      <div class="locations">
+        <h3><i class="fa-solid fa-location-dot"></i> Servicing Counties</h3>
+        <ul>
+          <li>Miami-Dade</li>
+          <li>Broward</li>
+          <li>Palm Beach</li>
+          <li>Martin</li>
+          <li>St. Lucie</li>
+          <li>Indian River</li>
+          <li>Brevard</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="appointment-form" class="appointment-form-section">
+    <h2>Request an Appointment</h2>
+  
+    <form (ngSubmit)="onSubmit()" #appointmentForm="ngForm" class="appointment-form">
+      <div class="form-group">
+        <label for="fullName"><i class="fa-solid fa-id-badge"></i> Full Name</label>
+        <input type="text" id="fullName" name="fullName" required [(ngModel)]="form.fullName" />
+      </div>
+  
+      <div class="form-group">
+        <label for="phone"><i class="fa-solid fa-phone"></i> Phone Number</label>
+        <input type="tel" id="phone" name="phone" required [(ngModel)]="form.phone" />
+      </div>
+  
+      <div class="form-group">
+        <label for="email"><i class="fa-solid fa-envelope"></i> Email Address</label>
+        <input type="email" id="email" name="email" required [(ngModel)]="form.email" />
+      </div>
+  
+      <div class="form-group">
+        <label for="county"><i class="fa-solid fa-map-marker-alt"></i> County / Location</label>
+        <input type="text" id="county" name="county" required [(ngModel)]="form.county" />
+      </div>
+  
+      <div class="form-group">
+        <label for="stateId"><i class="fa-solid fa-id-card"></i> Valid State ID</label>
+        <input type="text" id="stateId" name="stateId" required [(ngModel)]="form.stateId" />
+      </div>
+  
+      <div class="form-group">
+        <label for="oriNumber"><i class="fa-solid fa-circle-question"></i> ORI Number (if applicable)</label>
+        <input type="text" id="oriNumber" name="oriNumber" [(ngModel)]="form.oriNumber" />
+      </div>
+  
+      <div class="form-group">
+        <label for="dateTime"><i class="fa-solid fa-calendar-alt"></i> Requested Time, Date, and Location</label>
+        <textarea id="dateTime" name="dateTime" required [(ngModel)]="form.dateTime"></textarea>
+      </div>
+  
+      <button type="submit" [disabled]="!appointmentForm.form.valid">Submit Request</button>
+    </form>
+  </section>
+  
