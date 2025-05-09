@@ -1,77 +1,64 @@
+.contact-footer-banner {
+  background: #f9f9f9;
+  padding: 30px 5%;
+  border-top: 1px solid #eee;
 
-.contact-section {
-    background: #fff;
-    padding: 80px 10%;
+  .contact-banner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
     text-align: center;
-  
-    h2 {
-      font-size: 2.2rem;
-      color: #003049;
-      margin-bottom: 40px;
+  }
+
+  .contact-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.95rem;
+    color: #333;
+    gap: 8px;
+
+    i {
+      font-size: 1.2rem;
+      color: #8B4DDB;
     }
-  
-    .contact-details {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-      margin-bottom: 40px;
-  
-      .contact-card {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        font-size: 1rem;
-        color: #333;
-  
-        i {
-          color: #8B4DDB;
-          font-size: 1.2rem;
-        }
-  
-  
-        span {
-          color: #333;
-        }
+
+    a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+
+      &:hover {
+        color: #552f5c;
       }
     }
-  
-    .hours-locations {
-      display: flex;
-      justify-content: center;
-      gap: 60px;
-      flex-wrap: wrap;
-      text-align: left;
-  
-      .hours, .locations {
-        text-align: center;
-        max-width: 320px;
-  
-        h3 {
-          font-size: 1.2rem;
-          color: #552f5c;
-          margin-bottom: 16px;
-  
-          i {
-            margin-right: 8px;
-            color: #8B4DDB;
-          }
-        }
-  
-        ul {
-          list-style: none;
-          padding-left: 0;
-  
-          li {
-            margin-bottom: 10px;
-            font-size: 1rem;
-            color: #444;
-          }
-        }
-      }
+
+    span {
+      line-height: 1.4;
     }
   }
-  
+
+  .social-icons {
+    flex-direction: row;
+
+    a {
+      margin: 0 6px;
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contact-banner-container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+
 
   .appointment-form-section {
     text-align: left;

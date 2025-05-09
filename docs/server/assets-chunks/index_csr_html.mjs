@@ -1,4 +1,4 @@
-<!doctype html>
+export default `<!doctype html>
 <html lang="en" data-beasties-container="">
 <head><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <meta charset="utf-8">
@@ -16,3 +16,4 @@
   <!-- <script src="https://kit.fontawesome.com/72752ebc1c.js" crossorigin="anonymous"></script> -->
 <script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-Z2WXZABT.js" type="module"></script></body>
 </html>
+`;
